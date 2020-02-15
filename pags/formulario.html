@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>UNDERTALE</title>
+
+		<link rel="icon" href="../img/heart.png">
+
+		<link rel="stylesheet" type="text/css" href="../estilo/materialize.css">
+
+		<link rel="stylesheet" type="text/css" href="../estilo/customizado.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div class="navbar-fixed">
+			<nav>
+			    <div class="nav-wrapper black">
+			      	<a href="#!" class="brand-logo"><img src="../img/Logo.png"></a>
+
+			      	<ul class="right">
+			      		<li><a href="../index.php">Home</a></li>
+			      	</ul>
+			      	
+			    </div>
+	  		</nav>
+	  	</div>
+
+		<div class="container">
+
+			<div class="card-panel black">
+
+				<h1 class="flow-text white-text center-align">Cadastre-se no Grillby's</h1>
+
+			</div>
+
+		</div>
+
+		<div class="container">
+				
+			<form class="row" action="../php/cadastrar.php" method="post">
+				
+				<div class="input-field col s12 m6 l6">
+
+					<i class="material-icons prefix">tag_faces</i>
+					<input type="text" name="nome" id="nome">
+					<label for="nome">Nome</label>
+
+				</div>
+
+				<div class="input-field col s12 m6 l6">
+
+					<i class="material-icons prefix">mail</i>
+					<input type="email" name="email" id="email" class="validate">
+					<label for="email">Email</label>
+
+				</div>
+
+				<div class="input-field col s12">
+					
+					<select class="icons" name="personagem">
+
+						<option value="" selected="selected" disabled="disabled">Selecione o Personagem</option>
+						<option value="frisk" data-icon="../img/frisk.png">Frisk</option>
+						<option value="Asgore" data-icon="../img/Asgore.png">Asgore</option>
+						<option value="toriel"  data-icon="../img/toriel.png">Toriel</option>
+						<option value="sans"  data-icon="../img/sans.png">Sans</option>
+						<option value="Papyrus"  data-icon="../img/Papyrus.png">Papyrus</option>
+						<option value="Alphys"  data-icon="../img/Alphys.png">Alphys</option>
+						<option value="Undyne"  data-icon="../img/Undyne.png">Undyne</option>
+						<option value="Mettaton"  data-icon="../img/Mettaton.png">Mettaton</option>
+
+					</select>
+
+				</div>
+
+				<div class="input-field col s12 m6 l6">
+
+					<i class="material-icons prefix">tag_faces</i>
+					<input type="text" name="login" id="login">
+					<label for="login">Login</label>
+
+				</div>
+
+				<div class="input-field col s12 m6 l6">
+
+					<i class="material-icons prefix">mail</i>
+					<input type="password" name="senha" id="senha">
+					<label for="senha">Senha</label>
+
+				</div>
+
+				<div class="col s12 m6 l6">
+
+					<button type="submit" class="btn-large waves-effect waves-light black white-text" name="btn-cadastrar">
+						Entrar no Grillby's
+					</button>
+
+					<button type="reset" class="btn-large waves-effect waves-light black white-text">
+						Resetar
+					</button>
+					
+				</div>
+
+			</form>
+
+		</div>
+		
+
+			
+
+		<footer class="page-footer black">
+			
+			<div class="container white-text">
+				<div class="row">
+
+					<div class="col l6 s12">
+
+						<h5 class="white-text">Conteúdo</h5>
+
+						<p class="white-text">Novidades, dicas, curiosidades, fotos e muito mais nesta página web interativa e produzida para fans que gostam de jogar e conversar sobre undertale.</p>
+
+					</div>
+
+					<div class="col l4 offset-l2 s12">
+
+						<h5 class="white-text">Links</h5>
+
+						<ul>
+							<li><a class="white-text">História</a></li>
+							<li><a class="white-text">Personagens</a></li>
+							<li><a class="white-text">Subsolo</a></li>
+							<li><a class="white-text">Galeria</a></li>
+						</ul>
+						
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col s12 m4 l4">
+						<img src="../img/cachorro.gif" height="60">
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+
+				<div class="container">
+					2018 @ TOBY FOX - UNDERTALE, Jogador Amador - Yan da Silva
+				</div>
+
+				<a class="white-text right">Faça parte do Grillby's</a>
+
+			</div>
+
+		</footer>
+
+		
+		<script src="../js/jquery.js"></script>
+
+		<script src="../js/materialize.js"></script>
+
+		<script src="../js/script-inicializacao.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,47 @@
+@font-face{
+	src: url("../fontes/fonte1.otf");
+	font-family: "fonte1";
+}
+
+h1{
+	font-family: fonte1;
+}
+
+.pixelada{
+	font-family: fonte1;
+}
+
+.titu::after{
+	content: '|';
+	margin-left: 5px;
+	opacity: 1;
+	animation: pisca .7s infinite;
+}
+
+@keyframes pisca{
+	0%, 100%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 1;
+	}
+}
+
+.js .anime{
+	opacity: 0;
+	transform: translate3d(-50px, 0px, 0px);
+}
+
+.js .anime-init{
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+	transition: 0.7s all ease;
+}
+
+body{
+	background-image: url("../img/body-backg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+}

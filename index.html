@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>OFICINA -> PDO</title>
+
+		<link rel="icon" href="img/icone.png">
+
+		<link rel="stylesheet" type="text/css" href="estilo/materialize.css">
+
+		<link rel="stylesheet" type="text/css" href="estilo/customizado.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div class="navbar-fixed">
+			<nav>
+			    <div class="nav-wrapper blue darken-4">
+			      	<a href="#!" class="brand-logo"><img src="img/pdo5.jpg" width="120px" height="60px"></a>
+			      	<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+			      		<ul class="right hide-on-med-and-down">
+
+			        		<li><a href="#pqs">Para que serve?</a></li>
+			        		<li><a href="#con">Conexão</a></li>
+			        		<li><a href="#met">Métodos</a></li>
+			        		<li><a href="#int">Integrando ao Formulário</a></li>
+
+			      		</ul>
+			    </div>
+	  		</nav>
+	  	</div>
+
+	  	<ul class="sidenav" id="mobile-demo">
+
+		    <li><a href="">Para que serve?</a></li>
+		    <li><a href="">Conexão</a></li>
+		    <li><a href="">Métodos</a></li>
+		    <li><a href="">Integrando ao Formulário</a></li>
+
+		    <li><a href="" class="sidenav-close">Fechar</a></li>
+
+	  	</ul>
+
+
+		<div class="container">
+
+			<div class="card-panel blue darken-4">
+
+				<h1 class="flow-text white-text center-align titu">PDO - A Conectividade em larga escala</h1>
+
+			</div>
+
+		
+
+			<div class="slider">
+
+				<ul class="slides"> 
+					
+					<li>
+
+						<img src="img/pdo3.png">
+
+					</li>
+
+					<li>
+						
+						<img src="img/pdo1.jpg">
+
+					</li>
+
+					<li>
+						
+						<img src="img/pdo2.png">
+
+					</li>
+
+					<li>
+						
+						<img src="img/pdo4.png">
+
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div><br>
+
+		<div class="row container scrollspy anime" id="pqs">
+
+			<div class="col l6 m5 s12 blue darken-4">
+
+				<h1 class="flow-text white-text center-align">Para que serve?</h1>
+
+				<p class="flow-text white-text">
+					PDO (PHP DATA OBJECTS) é um módulo desenvolvido para realizar a comunicação com um banco de dados relacional. Este módulo segue o paradigma orientado a objeto, tendo seu surgimento a partir da versão 5 do php.<br><br><br><br>
+ 
+				</p>
+
+			</div>
+
+			<div class="col l6 m5 s12 blue darken-4 offset-m2">
+
+				<h1 class="flow-text white-text center-align">Utilidades</h1>
+
+				<p class="flow-text white-text">
+					O PDO possui diversas utilidades, entre as quais podemos destacar:<br><br>
+					-> Maior comunicação com diversos SGBDS. <br>
+					-> Segurança no envio de informações.<br>
+					-> Sintaxe Simples e fácil de aprender.<br>
+					-> Acesso integrado ao banco.<br>
+					-> Disponiblidade de recursos para diversas operações.<br>
+				</p>
+
+			</div>
+
+
+		</div>
+
+		<div class="row scrollspy anime" id="con">
+
+			<br>
+			<h1 class="flow-text white-text center-align">Conexão</h1>
+
+			<div class="col s12 m12 l12">
+
+				<div class="card-panel blue darken-4">
+					
+					<p class="flow-text white-text">A conexão deve ser realizada através de algumas funções já definidas da classe pdo.</p>
+
+					<img src="img/conexao.png" class="responsive-img"><br>
+
+					<blockquote class="flow-text white-text">Passo 1: Deve ser criada uma função para conectar.</blockquote>
+
+					<blockquote class="flow-text white-text">Passo 2: Colocar os blocos try - catch para caso ocorra a existência de algum erro.</blockquote>
+
+					<blockquote class="flow-text white-text">Passo 3: Dentro do bloco try colocamos uma variável que armazenará a nossa conexão, neste caso a variável <b>$pdo;</b> <br>
+					Ela receberá uma instância da classe PDO com alguns parâmetros:<br><br>
+
+					-> sgbd:host=servidor;dbname=nome_do_banco, usuario, senha
+
+					</blockquote>
+
+					<blockquote class="flow-text white-text">Passo 4: No bloco catch colocamos a PDOException com uma variável que receberá a exceção, depois colocamos a função <b>getMessage()</b> para alertar o erro.</blockquote>
+
+					<blockquote class="flow-text white-text">Passo 5: Coloca-se um return na variável <b>$pdo</b> para retornar a conexão.</blockquote>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row scrollspy" id="met">
+
+			<h1 class="flow-text white-text center-align" >Métodos</h1>
+			
+
+			<div class="col s12 m6 l6">
+				<div class="card hoverable anime">
+
+					<div class="card-image">
+
+						<img src="img/value.png">
+
+						<span class="card-title white-text">
+							bindValue
+						</span>
+
+					</div>
+
+					<div class="card-content blue darken-4">
+						
+						<p class="white-text">
+							Esta função serve para receber um valor para ser colocado em uma instrução SQL podendo receber uma variável de referência ou então um valor já predefinido.
+						</p>
+
+					</div>
+
+			</div>
+		</div>
+
+			<div class="col s12 m6 l6">
+				<div class="card hoverable anime">
+
+					<div class="card-image">
+
+						<img src="img/param.png">
+
+						<span class="card-title white-text">
+							bindParam
+						</span>
+
+					</div>
+
+					<div class="card-content blue darken-4">
+						
+						<p class="white-text">
+							No caso da função bindParam é a mesma coisa, porém esta função não aceita valores já definidos, só aceita variáveis de referência. 
+						</p>
+
+					</div>
+
+			</div>
+
+
+
+		</div>
+
+		<div class="col s12 m6 l6">
+				<div class="card hoverable anime">
+
+					<div class="card-image">
+
+						<img src="img/prepare.png">
+
+						<span class="card-title white-text">
+							Prepare
+						</span>
+
+					</div>
+
+					<div class="card-content blue darken-4">
+						
+						<p class="white-text">
+							A função prepare serve para preparar uma string SQL, ou seja nela colocamos o comando sql que desejamos realizar em nosso banco. 
+						</p>
+
+					</div>
+
+			</div>
+
+			
+			
+		</div>
+
+		<div class="col s12 m6 l6">
+				<div class="card hoverable anime">
+
+					<div class="card-image">
+
+						<img src="img/execute.png">
+
+						<span class="card-title white-text">
+							Execute
+						</span>
+
+					</div>
+
+					<div class="card-content blue darken-4">
+						
+						<p class="white-text">
+							Após a utilização do prepare deve-se utilizar uma função para executar a operação que queremos realizar no banco, esta função é o execute.
+						</p>
+
+					</div>
+
+			</div>
+
+			
+			
+		</div>
+
+		</div>	
+
+		<div class="parallax-container">
+
+			<div class="parallax">
+				<img src="img/pdo3.png">
+			</div>
+
+			<div class="row">
+
+				<h1 class="white-text center-align flow-text anime">Vamos para a prática</h1>
+
+				
+			</div>
+		
+		</div>
+
+		<div class="row scrollspy anime" id="int">
+
+				
+				<h1 class="white-text flow-text center-align">Galeria</h1>
+				
+				<div class="col s12 m3 l3">
+					<img src="img/gal1.png" class="responsive-img materialboxed" data-caption="Facilidade com Código">
+				</div>
+
+				<div class="col s12 m3 l3">
+					<img src="img/gal2.png" class="responsive-img materialboxed" data-caption="Formulários Organizados">
+				</div>
+
+				<div class="col s12 m3 l3">
+					<img src="img/gal3.png" class="responsive-img materialboxed" data-caption="Estilo e Eficácia">
+				</div>
+
+				<div class="col s12 m3 l3">
+					<img src="img/gal4.png" class="responsive-img materialboxed" data-caption="Simplicidade">
+				</div>
+				
+		</div>
+
+		<footer class="page-footer blue darken-4">
+			
+			<div class="container white-text">
+				<div class="row">
+
+					<div class="col l6 s12">
+
+						<h5 class="white-text">Conteúdo</h5>
+
+						<p class="white-text">PDO (PHP DATA OBJECTS) -> conexão, métodos, integração de formulários web.</p>
+
+					</div>
+
+					<div class="col l4 offset-l2 s12">
+
+						<h5 class="white-text">Links</h5>
+
+						<ul>
+							<li><a class="white-text">Para que serve?</a></li>
+							<li><a class="white-text">Conexão</a></li>
+							<li><a class="white-text">Métodos</a></li>
+							<li><a class="white-text">Integrando ao Formulário</a></li>
+						</ul>
+						
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col s12 m4 l4">
+						<img src="img/corre.gif" height="60">
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+
+				<div class="container">
+					2018 @ Yan Alves - Estudante de Informática
+				</div>
+
+			</div>
+
+		</footer>
+
+		
+		<script src="js/jquery.js"></script>
+
+		<script src="js/materialize.js"></script>
+
+		<script src="js/script-inicializacao.js"></script>
+
+		<script src="js/scroll.js"></script>
+
+		<script src="js/escrever.js"></script>
+
+	</body>
+
+</html>
